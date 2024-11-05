@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="text-center py-20 px-36 bg-white">
-            <h2 className="text-[#09080F] text-3xl font-bold mb-3">Gadget Heaven</h2>
+        <div className="text-center py-20 px-36 bg-white mt-20">
+            <Link to={"/"} className="text-[#09080F] text-3xl font-bold mb-3">Gadget Heaven</Link>
             <p className="text-[#09080F99] font-medium mb-8">Leading the way in cutting-edge technology and innovation.</p>
             <div className="border-b-2"></div>
             <div className="flex justify-around text-[#09080F99] mt-8">

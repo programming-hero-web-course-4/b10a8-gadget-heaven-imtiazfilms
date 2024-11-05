@@ -5,8 +5,8 @@ import { FaRegHeart } from "react-icons/fa6";
 
 const Navbar = () => {
     const location = useLocation();
-    const backgroundColor = location.pathname === "/Dashboard" ? "#F7F7F7" : "#9538E2";
-    const color = location.pathname === "/Dashboard" ? "black" : "#FFFFFF"
+    const backgroundColor = location.pathname === "/" ? "#9538E2" : "#F7F7F7";
+    const color = location.pathname === "/" ? "#FFFFFF" : "black"
     return (
         <div className="max-w-[95%] mx-auto px-32  rounded-t-2xl" style={{ backgroundColor, color }}>
             <div className="navbar">
