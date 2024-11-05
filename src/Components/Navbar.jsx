@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa6";
 
 
 const Navbar = () => {
+    const location = useLocation();
+    const backgroundColor = location.pathname === "/Dashboard" ? "#F7F7F7" : "#9538E2";
+    const color = location.pathname === "/Dashboard" ? "black" : "#FFFFFF"
     return (
-        <div className="max-w-[95%] mx-auto px-32 bg-[#9538E2] rounded-t-2xl text-white">
+        <div className="max-w-[95%] mx-auto px-32  rounded-t-2xl" style={{ backgroundColor, color }}>
             <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -27,17 +30,25 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><Link to="/">Home</Link></li>
-                            <li><Link to="/Statistics">Statistics</Link></li>
+                            <li><Link>Statistics</Link></li>
                             <li><Link to="/Dashboard">Dashboard</Link></li>
                         </ul>
                     </div>
-                    <Link to="/" className="btn btn-ghost text-xl">Gadget Heaven</Link>
+                    <Link to="/" className="text-xl" >Gadget Heaven</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 font-medium">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/Statistics">Statistics</Link></li>
-                        <li><Link to="/Dashboard">Dashboard</Link></li>
+                    <ul className="menu-horizontal px-1 font-medium gap-12">
+                        <li><NavLink className={({ isActive }) =>
+                            [
+                                isActive ? "underline" : "hover:underline",
+                            ]
+                        } to="/">Home</NavLink></li>
+                        <li><NavLink >Statistics</NavLink></li>
+                        <li><NavLink className={({ isActive }) =>
+                            [
+                                isActive ? "underline" : "hover:underline",
+                            ]
+                        } to="/Dashboard">Dashboard</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-6">

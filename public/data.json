@@ -1,113 +1,112 @@
 [
-    {
-      "product_id": "A001",
-      "product_title": "iPhone 14 Pro",
-      "product_image": "https://example.com/images/iphone14pro.jpg",
-      "category": "Smartphones",
-      "price": 999.0,
-      "description": "The latest iPhone with advanced camera and A16 Bionic chip.",
-      "Specification": ["6.1-inch display", "48MP Camera", "5G connectivity", "Face ID"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "A002",
-      "product_title": "iPhone 14",
-      "product_image": "https://example.com/images/iphone14.jpg",
-      "category": "Smartphones",
-      "price": 799.0,
-      "description": "Apple’s iPhone 14 with an impressive display and long-lasting battery life.",
-      "Specification": ["6.1-inch display", "Dual 12MP cameras", "5G connectivity"],
-      "availability": true,
-      "rating": 4.6
-    },
-    {
-      "product_id": "A003",
-      "product_title": "MacBook Pro 14-inch",
-      "product_image": "https://example.com/images/macbookpro14.jpg",
-      "category": "Laptops",
-      "price": 1999.0,
-      "description": "Powerful MacBook Pro with M2 chip for professional performance.",
-      "Specification": ["M2 Pro chip", "14.2-inch Liquid Retina display", "16GB RAM", "512GB SSD"],
-      "availability": true,
-      "rating": 4.9
-    },
-    {
-      "product_id": "A004",
-      "product_title": "MacBook Air 13-inch",
-      "product_image": "https://example.com/images/macbookair.jpg",
-      "category": "Laptops",
-      "price": 1099.0,
-      "description": "Lightweight MacBook Air with M2 chip and long battery life.",
-      "Specification": ["M2 chip", "13.6-inch Retina display", "8GB RAM", "256GB SSD"],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": "A005",
-      "product_title": "Apple Watch Series 8",
-      "product_image": "https://example.com/images/applewatch8.jpg",
-      "category": "Wearables",
-      "price": 399.0,
-      "description": "Health-focused smartwatch with ECG and blood oxygen monitoring.",
-      "Specification": ["ECG app", "Blood Oxygen app", "Always-On Retina display"],
-      "availability": true,
-      "rating": 4.5
-    },
-    {
-      "product_id": "A006",
-      "product_title": "Apple Watch Ultra",
-      "product_image": "https://example.com/images/applewatchultra.jpg",
-      "category": "Wearables",
-      "price": 799.0,
-      "description": "Rugged Apple Watch designed for extreme conditions and adventures.",
-      "Specification": ["49mm case", "Water resistant", "Dual-frequency GPS"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "A007",
-      "product_title": "Apple Studio Display",
-      "product_image": "https://example.com/images/studiodisplay.jpg",
-      "category": "Displays",
-      "price": 1599.0,
-      "description": "5K Retina display with True Tone and anti-reflective coating.",
-      "Specification": ["5K Retina display", "27-inch screen", "12MP Ultra Wide camera"],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": "A008",
-      "product_title": "Pro Display XDR",
-      "product_image": "https://example.com/images/prodisplayxdr.jpg",
-      "category": "Displays",
-      "price": 4999.0,
-      "description": "Professional-grade 6K display for photographers and filmmakers.",
-      "Specification": ["6K Retina display", "32-inch screen", "Extreme Dynamic Range"],
-      "availability": false,
-      "rating": 4.9
-    },
-    {
-      "product_id": "A009",
-      "product_title": "AirPods Pro (2nd Generation)",
-      "product_image": "https://example.com/images/airpodspro.jpg",
-      "category": "Audio",
-      "price": 249.0,
-      "description": "Wireless earbuds with active noise cancellation and transparency mode.",
-      "Specification": ["Active Noise Cancellation", "Spatial Audio", "Water and sweat resistance"],
-      "availability": true,
-      "rating": 4.6
-    },
-    {
-      "product_id": "A010",
-      "product_title": "Apple Vision Pro",
-      "product_image": "https://example.com/images/applevisionpro.jpg",
-      "category": "Headsets",
-      "price": 3499.0,
-      "description": "Augmented reality headset offering immersive experiences.",
-      "Specification": ["Augmented reality", "Spatial Audio", "High-resolution display"],
-      "availability": false,
-      "rating": 4.8
-    }
-  ]
-  
+  {
+    "product_id": "A001",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deep-purple?wid=940&hei=1112&fmt=png-alpha&.v=1662506593667",
+    "category": "Smartphones",
+    "price": 999.0,
+    "description": "The latest iPhone with advanced camera and A16 Bionic chip.",
+    "Specification": ["6.1-inch display", "48MP Camera", "5G connectivity", "Face ID"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "A002",
+    "product_title": "iPhone 14",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-purple?wid=940&hei=1112&fmt=png-alpha&.v=1663703840980",
+    "category": "Smartphones",
+    "price": 799.0,
+    "description": "Apple’s iPhone 14 with an impressive display and long-lasting battery life.",
+    "Specification": ["6.1-inch display", "Dual 12MP cameras", "5G connectivity"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "A003",
+    "product_title": "MacBook Pro 14-inch",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=940&hei=1112&fmt=png-alpha&.v=1671304674788",
+    "category": "Laptops",
+    "price": 1999.0,
+    "description": "Powerful MacBook Pro with M2 chip for professional performance.",
+    "Specification": ["M2 Pro chip", "14.2-inch Liquid Retina display", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "A004",
+    "product_title": "MacBook Air 13-inch",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=940&hei=1112&fmt=png-alpha&.v=1653346476269",
+    "category": "Laptops",
+    "price": 1099.0,
+    "description": "Lightweight MacBook Air with M2 chip and long battery life.",
+    "Specification": ["M2 chip", "13.6-inch Retina display", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "A005",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MNXX3_VW_34FR+watch-44-alum-silver-nc-8s_VW_34FR_WF_CO_GEO_EMEA_LANG_FR?wid=940&hei=1112&fmt=png-alpha&.v=1662519380424",
+    "category": "Wearables",
+    "price": 399.0,
+    "description": "Health-focused smartwatch with ECG and blood oxygen monitoring.",
+    "Specification": ["ECG app", "Blood Oxygen app", "Always-On Retina display"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "A006",
+    "product_title": "Apple Watch Ultra",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQF23_VW_34FR+watch-ultra-titanium-orange-trail_VW_34FR_WF_CO_GEO_EMEA?wid=940&hei=1112&fmt=png-alpha&.v=1660779826565",
+    "category": "Wearables",
+    "price": 799.0,
+    "description": "Rugged Apple Watch designed for extreme conditions and adventures.",
+    "Specification": ["49mm case", "Water resistant", "Dual-frequency GPS"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "A007",
+    "product_title": "Apple Studio Display",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MK0U3_AV3?wid=940&hei=1112&fmt=png-alpha&.v=1645723572315",
+    "category": "Displays",
+    "price": 1599.0,
+    "description": "5K Retina display with True Tone and anti-reflective coating.",
+    "Specification": ["5K Retina display", "27-inch screen", "12MP Ultra Wide camera"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "A008",
+    "product_title": "Pro Display XDR",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/pro-display-xdr-hero-201909?wid=940&hei=1112&fmt=png-alpha&.v=1583430413619",
+    "category": "Displays",
+    "price": 4999.0,
+    "description": "Professional-grade 6K display for photographers and filmmakers.",
+    "Specification": ["6K Retina display", "32-inch screen", "Extreme Dynamic Range"],
+    "availability": false,
+    "rating": 4.9
+  },
+  {
+    "product_id": "A009",
+    "product_title": "AirPods Pro (2nd Generation)",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-pro-select-202210?wid=940&hei=1112&fmt=png-alpha&.v=1663703684445",
+    "category": "Audio",
+    "price": 249.0,
+    "description": "Wireless earbuds with active noise cancellation and transparency mode.",
+    "Specification": ["Active Noise Cancellation", "Spatial Audio", "Water and sweat resistance"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "A010",
+    "product_title": "Apple Vision Pro",
+    "product_image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/vision-pro-hero-230605?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1685892655768",
+    "category": "Headsets",
+    "price": 3499.0,
+    "description": "Augmented reality headset offering immersive experiences.",
+    "Specification": ["Augmented reality", "Spatial Audio", "High-resolution display"],
+    "availability": false,
+    "rating": 4.8
+  }
+]
