@@ -2,9 +2,14 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import Dashboard from "../Pages/Dashboard";
+import HotSale from "../Pages/HotSale";
 import ErrorPage from "../ErrorPage";
 import Cards from "../Components/Cards";
 import CardDetails from "../Pages/CardDetails";
+import Cart from "../Components/Cart";
+import WishList from "../Components/WishList";
+import Faq from "../Pages/Faq";
+
 
 const routes = createBrowserRouter([
   {
@@ -30,8 +35,30 @@ const routes = createBrowserRouter([
         ]
       },
       {
+        path: "/HotSale",
+        element: <HotSale></HotSale>
+      },
+      {
+        path: "/Faq",
+        element: <Faq></Faq>
+      },
+      {
         path: "/Dashboard",
         element: <Dashboard></Dashboard>,
+        children: [
+          {
+              path: "/Dashboard",
+              element: <Cart></Cart>
+          },
+          {
+              path: "cart",
+              element: <Cart></Cart>
+          },
+          {
+              path: "wishlist",
+              element: <WishList></WishList>
+          }
+      ]
       },
       {
         path: "/cards/:id",

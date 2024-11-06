@@ -5,8 +5,11 @@ import { FaRegHeart } from "react-icons/fa6";
 
 const Navbar = () => {
     const location = useLocation();
-    const backgroundColor = location.pathname === "/" ? "#9538E2" : "#F7F7F7";
-    const color = location.pathname === "/" ? "#FFFFFF" : "black"
+    const isHomeOrCategory = location.pathname === "/" || location.pathname.startsWith("/category");
+
+    const backgroundColor = isHomeOrCategory ? "#9538E2" : "#F7F7F7";
+    const color = isHomeOrCategory ? "#FFFFFF" : "black";
+
     return (
         <div className="max-w-[95%] mx-auto px-32  rounded-t-2xl" style={{ backgroundColor, color }}>
             <div className="navbar">
@@ -46,14 +49,24 @@ const Navbar = () => {
                         <li><NavLink >Statistics</NavLink></li>
                         <li><NavLink className={({ isActive }) =>
                             [
-                                isActive ? "underline" : "hover:underline",
+                                isActive ? "text-[#9538E2]" : "hover:underline",
                             ]
                         } to="/Dashboard">Dashboard</NavLink></li>
+                        <li><NavLink className={({ isActive }) =>
+                            [
+                                isActive ? "text-[#9538E2]" : "hover:underline",
+                            ]
+                        } to="/HotSale">Hot Sale</NavLink></li>
+                        <li><NavLink className={({ isActive }) =>
+                            [
+                                isActive ? "text-[#9538E2]" : "hover:underline",
+                            ]
+                        } to="/Faq">FAQ</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-6">
-                    <Link className="bg-white p-2 rounded-full text-black"><BsCart4 /></Link>
-                    <Link className="bg-white p-2 rounded-full text-black"><FaRegHeart /></Link>
+                    <Link to="/Dashboard/cart" className="bg-white p-2 rounded-full text-black"><BsCart4 /></Link>
+                    <Link to="/dashboard/wishlist" className="bg-white p-2 rounded-full text-black"><FaRegHeart /></Link>
                 </div>
             </div>
         </div>

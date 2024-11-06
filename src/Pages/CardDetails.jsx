@@ -1,13 +1,23 @@
 import { BsCart4 } from "react-icons/bs";
 import { FaRegHeart, FaRegStar, FaStar } from "react-icons/fa6";
 import Rating from "react-rating";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+import { addFav } from "../Utils/wishlist";
+import { addToCart } from "../Utils/cart";
+
 
 const CardDetails = () => {
     const product = useLoaderData();
 
     const { product_title, product_image, price, Specification, description, rating, availability } = product;
 
+    const handelAddFav = (product) => {
+        addFav(product)
+    }
+
+    const handleAddToCart = () => {
+        addToCart(product); // Add the product to the cart when clicked
+    };
     return (
         <div className="mb-[340px]">
             <div className="absolute w-full bg-[#9538E2] text-white text-center">
@@ -50,16 +60,17 @@ const CardDetails = () => {
                         <span className="text-sm bg-[#09080f33] rounded-full px-2">{rating}</span>
                     </div>
                     <div className="card-actions items-center">
-                            <button
-                                className={`btn text-lg font-bold rounded-full px-6 ${availability ? 'bg-[#9538E2] text-white' : 'bg-gray-400 text-gray-700 cursor-not-allowed'
-                                    }`} disabled={!availability}>Add To Cart <BsCart4 />
-                            </button>
-                            <Link className="bg-white p-3 text-lg rounded-full border text-black"><FaRegHeart /></Link>
-                        </div>
+                        <button
+                            onClick={handleAddToCart}
+                            className={`btn text-lg font-bold rounded-full px-6 ${availability ? 'bg-[#9538E2] text-white' : 'bg-gray-400 text-gray-700 cursor-not-allowed'
+                                }`} disabled={!availability}>Add To Cart <BsCart4 />
+                        </button>
+                        <button onClick={() => handelAddFav(product)} className="bg-white p-3 text-lg rounded-full border text-black"><FaRegHeart /></button>
                     </div>
                 </div>
             </div>
-            );
+        </div>
+    );
 };
 
-            export default CardDetails;
+export default CardDetails;
